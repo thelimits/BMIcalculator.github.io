@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="asset/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link jquery script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>BMI CALCULATOR</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="bg-up">
+        <h1>BMI CALCULATOR</h1>
+    </div>
+
+    <!-- box -->
+    <div class="box-wrap">
+        <div class="box">
+            <h1>CALCULATE</h1>
+            <form class="wrapping-input" id="wrapping-inputs">
+                <div class="input"> 
+                    <input type="text" id="name" name="name" placeholder="Nama Kamu">
+                    <small class="text1">input false</small>
+                </div>
+                <div class="input"> 
+                    <input type="text" id="Usia" name="Usia" placeholder="Usia Kamu">
+                    <small class="text2">input false</small>
+                </div>
+                <div class="input"> 
+                    <input type="text"  id="Height" name="Height" placeholder="Tinggi Kamu [cm]">
+                    <small class="text3">input false</small>
+                </div>
+                <div class="input"> 
+                    <input type="text"  id="Weight" name="Weight" placeholder="Berat Kamu [kg]">
+                    <small class="text4">input false</small>
+                </div>
+
+                <div class="input">
+                    <button type="submit" id="button" name="button"><p>CALCULATE</p></button>
+                </div>
+
+                <div class="wrap-hasil" id="hasils">
+                    <small class="hasil" id="hasil">Halohalo</small>
+                </div>
+
+                <div class="small-box">
+                    <p>Informasi</p>
+                </div>
+                <div class="small-boxresponsive">
+                    <p>Informasi</p>
+                </div>
+                <div class="information">
+                    <h2>INFORMASI</h2>
+
+                    <div class="inf">
+                        <p class="textt">Di bawah 18,5 = Berat badan kurang</p><br>
+                        <p class="textt">18,5 – 22,9 = Berat badan normal</p><br>
+                        <p class="textt">23 – 29,9 = Berat badan berlebih (kecenderungan obesitas)</p><br>
+                        <p class="textt">30 ke atas = obesitas</p><br>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+        <div class="informationresponsive">
+            <h2>INFORMASI</h2>
+
+            <div class="inf">
+                <p class="textt">Di bawah 18,5 = Berat badan kurang</p><br>
+                <p class="textt">18,5 – 22,9 = Berat badan normal</p><br>
+                <p class="textt">23 – 29,9 = Berat badan berlebih (kecenderungan obesitas)</p><br>
+                <p class="textt">30 ke atas = obesitas</p><br>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="Validation&calculateScript.js"></script>
+    <script src="slide.js"></script>
+</body>
+</html>

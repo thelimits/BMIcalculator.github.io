@@ -1,0 +1,355 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html , body
+{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.bg-up
+{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background: url(asset/bg-fix.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-up h1
+{
+    font-weight: 800;
+    transform: translateY(-20px);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.box-wrap
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-wrap .box 
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    height: 527.8px;
+    width: 384px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.box-wrap .box h1
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: rgb(0, 132, 255);
+    transform: translateX(25%);
+}
+
+.box-wrap .box .wrapping-input
+{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-wrap .box .wrapping-input .input
+{
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-wrap .box .wrapping-input .input #name,
+.box-wrap .box .wrapping-input .input #Usia,
+.box-wrap .box .wrapping-input .input #Height, 
+.box-wrap .box .wrapping-input .input #Weight
+{
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 132, 255);
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    background: none;
+    transition: .5s ease-in-out;
+}
+
+.box-wrap .box .wrapping-input .input #name:focus,
+.box-wrap .box .wrapping-input .input #Usia:focus,
+.box-wrap .box .wrapping-input .input #Height:focus, 
+.box-wrap .box .wrapping-input .input #Weight:focus
+{
+    width: 320px;
+    transform: translateX(-10px);
+}
+
+.box-wrap .box .wrapping-input small
+{
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-wrap .box .wrapping-input .input input[type = "text"]
+{
+    padding-left: 10px;
+}
+
+.box-wrap .box .wrapping-input .input input[type = "text"]::placeholder
+{
+    color: rgb(109, 186, 250);
+}
+
+.box-wrap .box .wrapping-input .input #button 
+{
+    height: 50px;
+    width: 200px;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.box-wrap .box .wrapping-input .wrap-hasil 
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hasil
+{
+    visibility: hidden;
+}
+
+.box-wrap .box .wrapping-input .wrap-hasil.sucess small.hasil
+{
+    visibility: visible;
+}
+
+.box-wrap .box .wrapping-input .input #button 
+{
+    transform: translateX(25%);
+    background: linear-gradient(to bottom right , #2f67b2 , #29abe2);
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+.box-wrap .box .wrapping-input .input #button:hover
+{
+    transition: .5s ease-in-out;
+    border: 2px solid rgb(44, 255, 44);
+    color: rgb(44, 255, 44);
+}
+/* error and valid =======================================================*/
+/* name */
+.box-wrap .box .wrapping-input .input.success #name
+{
+    border: 3px solid rgb(44, 255, 44);
+}
+.box-wrap .box .wrapping-input .input.errors #name
+{
+    border: 3px solid rgb(255, 33, 33);
+}
+
+.box-wrap .box .wrapping-input .input.errors small.text1
+{
+    visibility: visible;
+    color: rgb(255, 33, 33);
+}
+
+/* usia */
+.box-wrap .box .wrapping-input .input.success #Usia
+{
+    border: 3px solid rgb(44, 255, 44);
+}
+.box-wrap .box .wrapping-input .input.errors #Usia
+{
+    border: 3px solid rgb(255, 33, 33);
+}
+
+.box-wrap .box .wrapping-input .input.errors small.text2
+{
+    visibility: visible;
+    color: rgb(255, 33, 33);
+}
+
+/* height */
+.box-wrap .box .wrapping-input .input.success #Height
+{
+    border: 3px solid rgb(44, 255, 44);
+}
+.box-wrap .box .wrapping-input .input.errors #Height
+{
+    border: 3px solid rgb(255, 33, 33);
+}
+
+.box-wrap .box .wrapping-input .input.errors small.text3
+{
+    visibility: visible;
+    color: rgb(255, 33, 33);
+}
+
+/* weight */
+.box-wrap .box .wrapping-input .input.success #Weight
+{
+    border: 3px solid rgb(44, 255, 44);
+}
+.box-wrap .box .wrapping-input .input.errors #Weight
+{
+    border: 3px solid rgb(255, 33, 33);
+}
+
+.box-wrap .box .wrapping-input .input.errors small.text4
+{
+    visibility: visible;
+    color: rgb(255, 33, 33);
+}
+
+/* ======================================================================= */
+.text1 , .text2 , .text3 ,.text4
+{
+    visibility: hidden;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+.box-wrap .box .wrapping-input .small-boxresponsive
+{
+    display: none;
+}
+.box-wrap .informationresponsive
+{
+    display: none;
+}
+
+.box-wrap .box .wrapping-input .small-box
+{
+    height: 70px;
+    width: 25px;
+    background-color: rgb(0, 183, 255);
+    border-left:  2px solid black;
+    border-top:  2px solid black;
+    border-bottom:  2px solid black;
+    border-right:  2px solid black;
+    position: initial;
+    transform: translateX(317px) translateY(-425px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.box-wrap .box .wrapping-input .small-box p 
+{
+    transform: rotate(90deg);
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(44, 255, 44);
+}
+
+.box-wrap .box .wrapping-input .small-box:hover p
+{
+    color: white;
+}
+
+
+.box-wrap .box .wrapping-input .information
+{
+    border-top:  2px solid black;
+    border-bottom:  2px solid black;
+    border-right:  2px solid black;
+    position: absolute;
+    transform: translateX(0px) translateY(-495px);
+    box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+.box-wrap .box .wrapping-input .information-normal
+{
+    transform: translateX(340px) translateY(-495px);
+}
+
+
+.box-wrap .box .wrapping-input .information h2
+{
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: rgb(0, 183, 255);
+}
+
+.box-wrap .box .wrapping-input .information .inf
+{
+    padding-left: 15px;
+    padding-top: 25px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.box-wrap .box .wrapping-input .information .inf .textt:nth-child(1)
+{
+    color: red;
+}
+
+.box-wrap .box .wrapping-input .information .inf .textt:nth-child(3)
+{
+    color: green;
+}
+
+.box-wrap .box .wrapping-input .information .inf .textt:nth-child(5)
+{
+    color: #ffa500;
+}
+
+.box-wrap .box .wrapping-input .information .inf .textt:nth-child(7)
+{
+    color: red;
+} 
