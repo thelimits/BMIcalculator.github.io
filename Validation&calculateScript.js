@@ -126,6 +126,7 @@ function validation()
         }
 
         $(".box-wrap .box .wrapping-input .information").toggleClass("information-normal");
+        $(".box-wrap .informationresponsive").toggleClass("informationresponsive-normal");
     }
 }
 
