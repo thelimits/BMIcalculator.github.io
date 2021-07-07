@@ -107,16 +107,18 @@ function validation()
         let BMI = w / (h2 ** 2);
         let BMIFIX = (BMI.toFixed(2));
         bmi(hasil , "BMI kamu Adalah : " + BMIFIX ) 
-
-        if(BMIFIX < 18.5)
+        const neddle = document.querySelector(".box-wrap .box .wrapping-input .information  .meters .neddle .ndl");
+        if(BMIFIX < 18.5 )
         {
+            neddle.style.transform = "rotate(" + (BMIFIX * 2.36) + "deg)";
             document.getElementById("hasil").style.color = "red";
         }
         else if(BMIFIX > 18.5 && BMIFIX < 22.9 )
         {
+            // 3.85
             document.getElementById("hasil").style.color = "green";
         }
-        else if(BMIFIX > 23 && BMIFIX < 29.9 )
+        else if(BMIFIX > 22.9 && BMIFIX < 29.9 )
         {
             document.getElementById("hasil").style.color = "#ffa500";
         }
@@ -125,8 +127,31 @@ function validation()
             document.getElementById("hasil").style.color = "red";
         }
 
-        $(".box-wrap .box .wrapping-input .information").toggleClass("information-normal");
-        $(".box-wrap .informationresponsive").toggleClass("informationresponsive-normal");
+        if(BMIFIX > 18.5 && BMIFIX < 19.6 )
+        {
+            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (45)) + "deg)";
+        }
+        if (BMIFIX > 19.6 && 20.7 )
+        {
+            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (45 + 5.625)) + "deg)";
+        }
+        if (BMIFIX > 20.7 && 21.8 )
+        {
+            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (50.625 +  5.625 + 3.75)) + "deg)";
+        }
+        if (BMIFIX > 21.8 && 22.9 )
+        {
+            let hasil = 50.625 +  5.625 + 3.75;
+            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (hasil + 5.625 + 4.625 + 0.75685 )) + "deg)";
+        }
+
+        // $(".box-wrap .box .wrapping-input .information").toggleClass("information-normal");
+        // $(".box-wrap .informationresponsive").toggleClass("informationresponsive-normal");
+
+
+        
+
+     
     }
 }
 

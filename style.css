@@ -295,7 +295,7 @@ html , body
     transform: translateX(0px) translateY(-495px);
     box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.15);
     width: 250px;
-    height: 300px;
+    height: 350px;
     background-color: white;
     z-index: -2;
     display: flex;
@@ -354,3 +354,55 @@ html , body
 {
     color: red;
 } 
+
+.box-wrap .box .wrapping-input .information .meters
+{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.box-wrap .box .wrapping-input .information  .meters::before
+{
+    content: "";
+    height: 9px;
+    width: 9px;
+    background: white;
+    position: absolute;
+    border-radius: 50% 50% 0 0 ;
+    z-index: 2;
+}
+
+.box-wrap .box .wrapping-input .information  .meters .neddle
+{
+    width: 115px;
+    height: 65px;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 50% ;
+ 
+}
+
+.box-wrap .box .wrapping-input .information  .meters .neddle .ndl
+{
+    width: 130px;
+    height: 3px;
+    transition: 1s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.box-wrap .box .wrapping-input .information  .meters .neddle .ndl .nds 
+{
+    border-radius: 25px 25px 0 0;
+    width: calc(130px/2.5);
+    height: 3px;
+    background: blue;
+}
