@@ -108,50 +108,43 @@ function validation()
         let BMIFIX = (BMI.toFixed(2));
         bmi(hasil , "BMI kamu Adalah : " + BMIFIX ) 
         const neddle = document.querySelector(".box-wrap .box .wrapping-input .information  .meters .neddle .ndl");
+        const neddleres = document.querySelector(".box-wrap .informationresponsive  .meters .neddle .ndl");
         if(BMIFIX < 18.5 )
-        {
-            neddle.style.transform = "rotate(" + (BMIFIX * 2.36) + "deg)";
+        { 
             document.getElementById("hasil").style.color = "red";
         }
         else if(BMIFIX > 18.5 && BMIFIX < 22.9 )
         {
-            // 3.85
             document.getElementById("hasil").style.color = "green";
         }
         else if(BMIFIX > 22.9 && BMIFIX < 29.9 )
         {
             document.getElementById("hasil").style.color = "#ffa500";
         }
-        else 
+        else if(BMIFIX > 29.9)
         {
             document.getElementById("hasil").style.color = "red";
         }
-
-        if(BMIFIX > 18.5 && BMIFIX < 19.6 )
+        if (BMIFIX > 0  &&  BMIFIX < 48.5)
         {
-            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (45)) + "deg)";
+            let rotate = (180 / (30 + 18.5));
+            neddle.style.transform = "rotate(" + (BMIFIX * rotate) + "deg)";
+            neddleres.style.transform = "rotate(" + (BMIFIX * rotate) + "deg)";
         }
-        if (BMIFIX > 19.6 && 20.7 )
+        if (BMIFIX <= 0)
         {
-            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (45 + 5.625)) + "deg)";
+            neddle.style.transform = "rotate(0deg)";
+            neddleres.style.transform = "rotate(0deg)";
         }
-        if (BMIFIX > 20.7 && 21.8 )
+        if(BMIFIX > 48.5)
         {
-            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (50.625 +  5.625 + 3.75)) + "deg)";
+            neddle.style.transform = "rotate(180deg)";
+            neddleres.style.transform = "rotate(180deg)";
         }
-        if (BMIFIX > 21.8 && 22.9 )
-        {
-            let hasil = 50.625 +  5.625 + 3.75;
-            neddle.style.transform = "rotate(" + ((BMIFIX * 0.5625 ) + (hasil + 5.625 + 4.625 + 0.75685 )) + "deg)";
-        }
-
-        // $(".box-wrap .box .wrapping-input .information").toggleClass("information-normal");
-        // $(".box-wrap .informationresponsive").toggleClass("informationresponsive-normal");
-
-
         
+        $(".box-wrap .box .wrapping-input .information").addClass("information-normal");
+        $(".box-wrap .informationresponsive").addClass("informationresponsive-normal");
 
-     
     }
 }
 

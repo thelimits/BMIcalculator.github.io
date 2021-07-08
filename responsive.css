@@ -100,10 +100,10 @@
         border-bottom:  2px solid black;
         border-right:  2px solid black;
         position: absolute;
-        transform: translateX(0px) translateY(0px) scale(.7);
+        transform: translateX(0px) translateY(-50px) scale(.7);
         box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.15);
         width: 250px;
-        height: 300px;
+        height: 350px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background-color: white;
@@ -116,7 +116,7 @@
 
     .box-wrap .informationresponsive-normal
     {
-        transform: translateX(0px) translateY(220px) scale(.7);
+        transform: translateX(0px) translateY(237px) scale(.7);
     
     }
 
@@ -165,6 +165,59 @@
     {
         color: red;
     } 
+
+    /* meters */
+    .box-wrap .informationresponsive .meters
+    {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .box-wrap .informationresponsive  .meters::before
+    {
+        content: "";
+        height: 9px;
+        width: 9px;
+        background: white;
+        position: absolute;
+        border-radius: 50% 50% 0 0 ;
+        z-index: 2;
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle
+    {
+        width: 115px;
+        height: 65px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 50% ;
+    
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle .ndl
+    {
+        width: 130px;
+        height: 3px;
+        transition: 1s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+    }
+    .box-wrap .informationresponsive .meters .neddle .ndl .nds 
+    {
+        border-radius: 25px 25px 0 0;
+        width: calc(130px/2.5);
+        height: 3px;
+        background: blue;
+    }
 }
 
 @media only screen and  (max-width : 400px)
@@ -236,10 +289,10 @@
         border-bottom:  2px solid black;
         border-right:  2px solid black;
         position: absolute;
-        transform: translateX(0px) translateY(0px) scale(.6);
+        transform: translateX(0px) translateY(-50px) scale(.6);
         box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.15);
         width: 250px;
-        height: 300px;
+        height: 350px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background-color: white;
@@ -252,7 +305,7 @@
 
     .box-wrap .informationresponsive-normal
     {
-        transform: translateX(0px) translateY(195px) scale(.6);
+        transform: translateX(0px) translateY(210px) scale(.6);
     
     }
 
@@ -301,6 +354,58 @@
     {
         color: red;
     } 
+    /* meters */
+    .box-wrap .informationresponsive .meters
+    {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .box-wrap .informationresponsive  .meters::before
+    {
+        content: "";
+        height: 9px;
+        width: 9px;
+        background: white;
+        position: absolute;
+        border-radius: 50% 50% 0 0 ;
+        z-index: 2;
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle
+    {
+        width: 115px;
+        height: 65px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 50% ;
+    
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle .ndl
+    {
+        width: 130px;
+        height: 3px;
+        transition: 1s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+    }
+    .box-wrap .informationresponsive .meters .neddle .ndl .nds 
+    {
+        border-radius: 25px 25px 0 0;
+        width: calc(130px/2.5);
+        height: 3px;
+        background: blue;
+    }
 }
 
 @media only screen and  (max-width : 370px)
@@ -377,10 +482,10 @@
         border-bottom:  2px solid black;
         border-right:  2px solid black;
         position: absolute;
-        transform: translateX(0px) translateY(0px) scale(.6);
+        transform: translateX(0px) translateY(-50px) scale(.6);
         box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.15);
         width: 250px;
-        height: 300px;
+        height: 350px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background-color: white;
@@ -393,7 +498,7 @@
 
     .box-wrap .informationresponsive-normal
     {
-        transform: translateX(0px) translateY(194px) scale(.6);
+        transform: translateX(0px) translateY(205px) scale(.6);
     
     }
 
@@ -442,6 +547,58 @@
     {
         color: red;
     } 
+    /* meters */
+    .box-wrap .informationresponsive .meters
+    {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .box-wrap .informationresponsive  .meters::before
+    {
+        content: "";
+        height: 9px;
+        width: 9px;
+        background: white;
+        position: absolute;
+        border-radius: 50% 50% 0 0 ;
+        z-index: 2;
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle
+    {
+        width: 115px;
+        height: 65px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 50% ;
+    
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle .ndl
+    {
+        width: 130px;
+        height: 3px;
+        transition: 1s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+    }
+    .box-wrap .informationresponsive .meters .neddle .ndl .nds 
+    {
+        border-radius: 25px 25px 0 0;
+        width: calc(130px/2.5);
+        height: 3px;
+        background: blue;
+    }
 }
 
 @media only screen and  (max-width : 370px) and (max-height : 650px)
@@ -518,10 +675,10 @@
         border-bottom:  2px solid black;
         border-right:  2px solid black;
         position: absolute;
-        transform: translateX(0px) translateY(0px) scale(.6);
+        transform: translateX(0px) translateY(-50px) scale(.6);
         box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.15);
         width: 250px;
-        height: 300px;
+        height: 350px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background-color: white;
@@ -534,7 +691,7 @@
 
     .box-wrap .informationresponsive-normal
     {
-        transform: translateX(0px) translateY(194px) scale(.6);
+        transform: translateX(0px) translateY(205px) scale(.6);
     
     }
 
@@ -583,6 +740,58 @@
     {
         color: red;
     } 
+    /* meters */
+    .box-wrap .informationresponsive .meters
+    {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .box-wrap .informationresponsive  .meters::before
+    {
+        content: "";
+        height: 9px;
+        width: 9px;
+        background: white;
+        position: absolute;
+        border-radius: 50% 50% 0 0 ;
+        z-index: 2;
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle
+    {
+        width: 115px;
+        height: 65px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 50% ;
+    
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle .ndl
+    {
+        width: 130px;
+        height: 3px;
+        transition: 1s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+    }
+    .box-wrap .informationresponsive .meters .neddle .ndl .nds 
+    {
+        border-radius: 25px 25px 0 0;
+        width: calc(130px/2.5);
+        height: 3px;
+        background: blue;
+    }
 }
 
 @media only screen and  (max-width : 285px) and (max-height : 655px)
@@ -662,7 +871,7 @@
         transform: translateX(0px) translateY(-50px) scale(.6);
         box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.15);
         width: 250px;
-        height: 300px;
+        height: 350px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background-color: white;
@@ -675,7 +884,7 @@
 
     .box-wrap .informationresponsive-normal
     {
-        transform: translateX(0px) translateY(176.5px) scale(.6);
+        transform: translateX(0px) translateY(190px) scale(.6);
     
     }
 
@@ -724,5 +933,57 @@
     {
         color: red;
     } 
+    /* meters */
+    .box-wrap .informationresponsive .meters
+    {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .box-wrap .informationresponsive  .meters::before
+    {
+        content: "";
+        height: 9px;
+        width: 9px;
+        background: white;
+        position: absolute;
+        border-radius: 50% 50% 0 0 ;
+        z-index: 2;
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle
+    {
+        width: 115px;
+        height: 65px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 50% ;
+    
+    }
+
+    .box-wrap .informationresponsive  .meters .neddle .ndl
+    {
+        width: 130px;
+        height: 3px;
+        transition: 1s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+    }
+    .box-wrap .informationresponsive .meters .neddle .ndl .nds 
+    {
+        border-radius: 25px 25px 0 0;
+        width: calc(130px/2.5);
+        height: 3px;
+        background: blue;
+    }
 }
 

@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 330.3 165" style="enable-background:new 0 0 330.3 165;" xml:space="preserve">
+	 viewBox="0 0 330.3 170.8" style="enable-background:new 0 0 330.3 170.8;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FF0000;}
 	.st1{fill:#008000;}
 	.st2{fill:#FFA500;}
-	.st3{fill:#00FF00;}
-	.st4{font-family:'MyriadPro-Regular';}
-	.st5{font-size:19.1386px;}
+	.st3{font-family:'MyriadPro-Regular';}
+	.st4{font-size:12px;}
+	.st5{font-size:14.2275px;}
 </style>
 <g>
-	<path class="st0" d="M48.4,48.2C18.5,78.1,0,119.4,0,165h165.2v0L48.4,48.2z"/>
-	<path class="st1" d="M165.2-0.2c-45.6,0-86.9,18.5-116.8,48.4L165.2,165V-0.2z"/>
-	<path class="st2" d="M165.2,165L281.9,48.2C252,18.3,210.8-0.2,165.2-0.2L165.2,165L165.2,165z"/>
-	<path class="st0" d="M281.9,48.2L165.2,165l0,0h165.1C330.3,119.4,311.8,78.1,281.9,48.2z"/>
-	<polygon class="st3" points="165.2,165 165.2,165 165.2,165 	"/>
-	<polygon class="st3" points="165.2,165 165.2,165 165.2,165 	"/>
+	<path class="st0" d="M1,170.8h164.7L105.4,18C44.4,41.9,1.2,101.3,1,170.8z"/>
+	<path class="st1" d="M105.4,18l60.2,152.8L151.3,7.2C135.3,8.6,119.8,12.3,105.4,18z"/>
+	<path class="st2" d="M165.6,6.6c-4.8,0-9.6,0.2-14.3,0.6l14.3,163.6l58.9-153.3C206.2,10.5,186.4,6.6,165.6,6.6z"/>
+	<path class="st0" d="M224.5,17.5l-58.9,153.3h164.7C330.1,100.8,286.2,41.1,224.5,17.5z"/>
 </g>
-<text transform="matrix(0.3699 -0.9291 0.9291 0.3699 33.6893 135.3026)" class="st4 st5">Kurus</text>
-<text transform="matrix(0.8882 -0.4594 0.4594 0.8882 92.4227 48.2109)" class="st4 st5">ideal</text>
-<text transform="matrix(0.9144 0.4048 -0.4048 0.9144 189.7773 23.6556)"><tspan x="0" y="0" class="st4 st5">   berat </tspan><tspan x="0" y="23" class="st4 st5">berlebih</tspan></text>
-<text transform="matrix(0.3995 0.9167 -0.9167 0.3995 281.9283 82.4953)" class="st4 st5">obesitas</text>
+<text transform="matrix(0.5243 -0.8515 0.8515 0.5243 24.6842 138.0087)" class="st3 st4">Berat badan kurang</text>
+<text transform="matrix(0.9782 -0.2075 0.2075 0.9782 116.9942 30.2453)" class="st3 st4">ideal</text>
+<text transform="matrix(0.9881 0.154 -0.154 0.9881 165.6298 17.9711)"><tspan x="0" y="0" class="st3 st4">   berat</tspan><tspan x="0" y="14.4" class="st3 st4"> berlebih</tspan></text>
+<text transform="matrix(0.5314 0.7583 -0.8189 0.5739 266.5801 70.4964)" class="st3 st5">obesitas</text>
 </svg>

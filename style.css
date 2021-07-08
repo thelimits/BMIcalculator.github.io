@@ -342,7 +342,7 @@ html , body
 
 .box-wrap .box .wrapping-input .information .inf .textt:nth-child(3)
 {
-    color: green;
+    color: #008000;
 }
 
 .box-wrap .box .wrapping-input .information .inf .textt:nth-child(5)
