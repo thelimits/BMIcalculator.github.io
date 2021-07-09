@@ -156,17 +156,13 @@ $(document).ready(function()
                 BMI:BMIFIX
             }
             
-            $.ajax({url:'http://localhost/BMIcalculator/API/data.php',method:'POST',data:formdata,success:function(response)
+            $.ajax({url:'https://github.com/thelimits/BMIcalculator.github.io/blob/main/API/data.php',method:'POST',data:formdata,success:function(response)
                 {
                     var res = JSON.parse(response);
                     console.log(res);
                 } 
             
             });
-
-            fetchJsonp('http://localhost:3000')
-            .then(res => res.json())
-            .then(json => console.log(json));
         }
     }
 
