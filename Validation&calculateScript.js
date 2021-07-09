@@ -155,8 +155,10 @@ $(document).ready(function()
                 berat:WeightValue,
                 BMI:BMIFIX
             }
+
             
-            $.ajax({url:'https://github.com/thelimits/BMIcalculator.github.io/blob/main/API/data.php',method:'POST',data:formdata,success:function(response)
+            
+            $.ajax({url:'http://localhost/BMIcalculator/API/data.php',method:'POST',data:formdata,success:function(response)
                 {
                     var res = JSON.parse(response);
                     console.log(res);
