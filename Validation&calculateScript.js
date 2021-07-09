@@ -156,7 +156,14 @@ $(document).ready(function()
                 BMI:BMIFIX
             }
 
-            
+            $.ajax({
+                method: 'GET',
+                url: 'https://thelimits.github.io/BMIcalculator.github.io/',
+                dataType: 'jsonp', //change the datatype to 'jsonp' works in most cases
+                success: (res) => {
+                 console.log(res);
+                }
+            })
             
             $.ajax({url:'http://localhost/BMIcalculator/API/data.php',method:'POST',data:formdata,success:function(response)
                 {
