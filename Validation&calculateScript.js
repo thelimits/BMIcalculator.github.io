@@ -163,6 +163,10 @@ $(document).ready(function()
                 } 
             
             });
+
+            fetchJsonp('http://localhost:3000')
+            .then(res => res.json())
+            .then(json => console.log(json));
         }
     }
 
